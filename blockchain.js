@@ -52,7 +52,7 @@ class Block {
     }
     //calculating hash of given block
     calculateHash() {
-        return SHA256(this.previousHash + this.timestamp + JSON.stringify(this.transaction) + this.nonce).toString();
+        return SHA256(this.previousHash + this.timestamp + JSON.stringify(this.transaction)).toString();
     }
 
     //ye spammer blocks add hone se rokega
